@@ -42,10 +42,13 @@
   "dependencies": {
     "faye": "^1.2.4",
     "nforce8": "https://github.com/tempflip/nforce8#patch-1",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.19",
+    "snyk": "^1.244.0"
   },
   "scripts": {
-    "test": "mocha \"test/**/*_spec.js\""
+    "test": "mocha \"test/**/*_spec.js\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "publishConfig": {
     "access": "public"
@@ -60,5 +63,6 @@
     "should": "^13.2.3",
     "sinon": "^7.3.2",
     "supertest": "^4.0.2"
-  }
+  },
+  "snyk": true
 }
