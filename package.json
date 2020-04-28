@@ -40,7 +40,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "faye": "^1.2.4",
+    "faye": "^1.2.5",
     "nforce8": "2.0.11",
     "xml2js": "^0.4.23"
   },
